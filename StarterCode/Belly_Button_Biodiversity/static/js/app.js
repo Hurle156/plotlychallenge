@@ -76,7 +76,7 @@ function buildBubble(id){
 
 }
 function metaData(id){
-    console.log("Let's get Meta");
+    console.log("Let's get Meta!!!");
     d3.json(jsonFile).then(function(d){
         var metaData = d.metadata;
         var subject = metaData.filter(s=>s.id==id)[0];
@@ -88,6 +88,7 @@ function metaData(id){
             .classed("item", true)
             .text(`${key}: ${value}`)
         });
+        
         
     })
 }
